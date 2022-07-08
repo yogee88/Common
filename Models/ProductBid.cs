@@ -9,6 +9,7 @@ namespace Common.Models
 {
     public class ProductBid : IRequest<bool>
     {
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int ProductBidId { get; set; }
 
         public int ProductId { get; set; }
